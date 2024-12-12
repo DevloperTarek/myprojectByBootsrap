@@ -1,7 +1,8 @@
 /* Normal desktop :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
-
-
+     .service-shape-5{
+          visibility: hidden;
+      }
 }
 
 
@@ -17,6 +18,9 @@
      .header-top-area .row {
           align-items: center;
       }
+     .service-shape-5{
+         visibility: hidden;
+     }
 }
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -39,12 +43,45 @@
 
  
 /* small mobile :320px. */
-@media only screen and (min-width: 320px) and (max-width: 580px) {
+@media only screen and (min-width: 280px) and (max-width:520px) {
      /* hero area */
+     .contact-card{
+          flex-direction: column;
+          display: flex;
+          text-align: center;
+          padding: 15px;
+          gap: 20px;
+     }
+     .contact-card-icon {
+          font-size: 30px;
+          width: 55px;
+          height: 55px;
+          padding: 12px;
+          margin-left: 50%;
+          transform: translateX(-50%);
+          border-radius: 50%;
+     }
+     .contact-wrap h5 {
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 28px;
+      }
+     .contact-wrap p {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          margin: 5px 0;
+     }
+     .contact-wrap a {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 40px;
+     }
      #content-area h1{
-          font-size: 40px;
+          font-size: 26px;
           font-weight: 700;
-          line-height: 50px;
+          line-height: 42px;
+          text-align: center;
       }
       #content-area p{
           font-size: 16px;
@@ -53,8 +90,35 @@
      .content-wrapper{
           padding: 100px 0;
      }
+     .experience-box {
+          width: 120px;
+          height: 120px;
+          position: absolute;
+          bottom: -45px;
+          left: -9px;
+     }
+     .shape-4 img {
+          max-width: 102px;
+          width: 100%;
+      }
+     .service-content-wrap p.subtitle {
+          font-family: 'Poppins',sans-serif;
+          font-size: 16px;
+          text-align: center;
+     }
+     .service-content-wrap h1 {
+          font-size: 23px;
+          line-height: 40px;
+          margin: 15px 0;
+          text-align: center;
+      }
 }
- 
+/* small mobile :280px. */
+@media only screen and (max-width:220px){
+     .contact-card{
+          padding: 20px;
+     }
+}
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
      /* project area */

@@ -258,7 +258,9 @@
 .gap-30{
 	gap:30px;
 }
-
+.gap-60{
+	gap: 60px;
+}
 /*-- Padding Top --*/
 
 .pt-5 {
